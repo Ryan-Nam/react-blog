@@ -4,7 +4,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      ㅁㄴㅇㅁㅇ
+      {/* blog: Nav */}
+      <div className="black-nav">
+        <div>개발 Blog</div>
+      </div>
     </div>
   );
 }
