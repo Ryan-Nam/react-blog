@@ -11,7 +11,10 @@ function App() {
   let posts = '시드니 고기 맛집';
 
   function 제목바꾸기(){
-    
+    var newArray = [...글제목];
+    newArray[0] = '여자코트 추천';
+    글제목변경(newArray);
+
   }
 
   return (
