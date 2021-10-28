@@ -10,6 +10,9 @@ function App() {
   let [따봉, 따봉변경] = useState(0); //0으로 초기화
   let posts = '시드니 고기 맛집';
 
+  function 제목바꾸기(){
+    
+  }
 
   return (
     <div className="App">
@@ -17,7 +20,8 @@ function App() {
       <div className="black-nav">
         <div>개발 Blog</div>
       </div>
-      <div className="list">
+      <button onClick={제목바꾸기} >Button</button>
+      <div className="list">  
         <h3> { 글제목[0] } <span onClick={()=> { 따봉변경(따봉+1) }}>👍 </span>{따봉}</h3>
         <p>10월 26일 발행</p>
         <hr/>
