@@ -40,9 +40,12 @@ function App() {
       </div>
 
 
-      
-      <Modal></Modal>
-      
+      {
+        // 중괄호안에 if 사용 불가.. -> 삼항연상자를 사용
+        1 < 3 
+        ? <Modal></Modal>
+        : null // 텅빈 HTML
+      }
 
 
     </div>
@@ -50,13 +53,16 @@ function App() {
 }
 
 // Component 만드는 법
+// <> -> fragment
 function Modal(){
   return (
+    <> 
     <div className="modal">
         <h2>제목</h2>
         <p>날짜</p>
         <p>상세내용</p>
       </div>
+    </>
   )
 }
 
