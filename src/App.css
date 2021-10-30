@@ -6,6 +6,12 @@ body {
   /* font-family: "nanumsquare"; 폰트 안돼*/
 }
 
+.modal {
+  padding: 20px;
+  margin-top: 20px;
+  background: #eee;
+}
+
 .black-nav {
   background: black;
   width: 100%;
