@@ -10,6 +10,9 @@ function App() {
   let [따봉, 따봉변경] = useState(0); //0으로 초기화
   let posts = '시드니 고기 맛집';
 
+
+  let [modal, modal변경] = useState(false);
+
   function 제목바꾸기(){
     var newArray = [...글제목];
     newArray[0] = '여자코트 추천';
@@ -42,7 +45,7 @@ function App() {
 
       {
         // 중괄호안에 if 사용 불가.. -> 삼항연상자를 사용
-        1 < 3 
+        modal === true
         ? <Modal></Modal>
         : null // 텅빈 HTML
       }
