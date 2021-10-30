@@ -39,15 +39,25 @@ function App() {
         <hr/>
       </div>
 
-      <div className="modal">
+
+      
+      <Modal></Modal>
+      
+
+
+    </div>
+  );
+}
+
+// Component 만드는 법
+function Modal(){
+  return (
+    <div className="modal">
         <h2>제목</h2>
         <p>날짜</p>
         <p>상세내용</p>
       </div>
-
-      
-    </div>
-  );
+  )
 }
 
 export default App;
